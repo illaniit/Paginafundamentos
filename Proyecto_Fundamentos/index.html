@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>La seguridad informática</title>
+        <link rel="stylesheet" type="text/css" href="/css/estilos.css">
+         <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const contenedorTitulo = document.getElementById("titulo");
+                const contenedorComandos = document.getElementById("simulacion-comandos");
+                const comandos = [
+                    "login",
+                    "cd documentos",
+                    "ls",
+                    "cat archivo.txt",
+                    "HACKED BY ILLANIIT0"
+                    
+                ];
+                let indiceComando = 0;
+                let indiceCaracter = 0;
+    
+                function escribirComando() {
+                    const comandoActual = comandos[indiceComando];
+                    const comandoParcial = comandoActual.substring(0, indiceCaracter);
+                    contenedorComandos.textContent = comandoParcial;
+    
+                    if (indiceCaracter < comandoActual.length) {
+                        indiceCaracter++;
+                    } else {
+                        indiceComando = (indiceComando + 1) % comandos.length; // Reinicia si ha llegado al final
+                        indiceCaracter = 0;
+                    }
+    
+                    setTimeout(escribirComando, 300); // Ajusta la velocidad de escritura
+                }
+    
+                escribirComando(); // Inicia la simulación de escritura al cargar la página
+            });
+        </script>
+    </head>
+<body>
+    
+    <nav>
+        <a href="/subpaginas/sobremi.html">Sobre mí</a>
+        <a href="#">Red de páginas</a>
+        <a href="#">Fundamentos de la Ingeniería Informática</a>
+        <a href="/subpaginas/contactanos.html">Contáctanos</a>
+    </nav>
+<header>
+    <h1 class="texto-animado">La seguridad Informática</h1>
+    <h2 id="simulacion-comandos"> ROOT</h2>
+</header>
+    <img src="/imagenes/logo-kali.jpg" class="centrar-imagen" alt="200px" width="300px" height="200px">
+    <p>La seguridad informática desempeña un papel crucial en la era digital, donde la interconexión y la transferencia de datos son elementos esenciales de nuestra vida cotidiana. En un mundo impulsado por la tecnología, la protección de la información se vuelve fundamental para salvaguardar la privacidad y la integridad de datos sensibles. Desde la evolución constante de las amenazas cibernéticas hasta la implementación de avanzadas técnicas de encriptación, la seguridad informática se erige como un bastión contra los riesgos digitales. Explorar este fascinante campo no solo implica comprender las tácticas maliciosas, sino también abrazar la innovación para diseñar sistemas robustos y resilientes. En el corazón de la seguridad informática reside la misión de garantizar un entorno digital confiable, permitiendo así que la tecnología florezca de manera segura y ética.</p>
+    <img src="/imagenes/images.jpeg" class="centrar-imagen" alt="seguridad width = 400 px" height="250px">
+    <h2 class="texto-animado">Los "Hackers" de la red.</h2>
+    <p>En el oscuro rincón de la red, donde los bits y bytes bailan al ritmo de la clandestinidad digital, se teje una historia fascinante sobre un grupo de hackers legendarios conocidos como "Los Guardianes del Código". Estos astutos maestros del teclado no eran simples agentes del caos; eran virtuosos de la ética hacker que navegaban por el ciberespacio con una misión única: proteger la integridad de la información en un mundo lleno de amenazas digitales. Su leyenda comenzó con el audaz rescate de una base de datos gubernamental comprometida, donde, con destreza magistral, descifraron los intrincados laberintos de la seguridad cibernética. Sin embargo, estos justicieros cibernéticos no eran solo sombras en la red; dejaban su marca característica, un elegante glifo digital que se convertiría en su firma distintiva. A medida que la historia se extendía, los Guardianes del Código se volvían leyendas modernas, desafiando a los malhechores digitales y protegiendo la integridad del vasto ciberespacio. Su historia nos recuerda que, en el juego de las sombras y los algoritmos, a veces los héroes emergen de entre las líneas de código, listos para luchar por un mundo digital más seguro. ¡Prepárate para adentrarte en este intrigante viaje entre hackers y códigos en el ciberuniverso!</p>
+    <img src="/imagenes/mr__robot___elliot_alderson_by_electroradio_db3hleu-pre.png" class="centrar-imagen" alt="mrrobot" width="350 px" height="250 px">
+    <div id="simulacion-comandos"></div>
+  
+</body>
+
+</html>
