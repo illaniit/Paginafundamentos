@@ -1,0 +1,118 @@
+body{
+    font-family: 'Anonymous pro', monospace;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+
+}
+h1, h2, h3{
+    color: whitesmoke;
+}
+p{
+    color: #0f0;
+    text-shadow: 2px 2px 4px #0f0;
+   
+}
+label{
+    color: #0f0;
+}
+
+
+class{
+    color: #0f0;
+}
+
+label{
+    color: #0f0;
+}
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color:black;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #0f0;
+}
+
+/* Estilos para las etiquetas de los campos */
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Estilos para los campos de entrada de texto y área de texto */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+a {
+    text-decoration: none;
+    color: #0f0;
+}
+a:hover {
+    border-bottom: 2px solid greenyellow;
+}
+img{
+    opacity: 0.8; 
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}   
+.centrar-imagen{
+    display: block;
+    margin: auto;
+}
+@keyframes animacionTexto {
+    0% {
+      transform: scale(0.9); /* Escala inicial del texto */
+    }
+    30% {
+      transform: scale(0.7); /* Escala a la mitad de la animación */
+    }
+    100% {
+      transform: scale(0.9); /* Vuelve a la escala inicial al final de la animación */
+    }
+  }
+  
+  /* Aplicar la animación al elemento de texto */
+  .texto-animado {
+    animation: animacionTexto 2s infinite; /* Nombre de la animación, duración, e infinito para repetir */
+  }
+  #simulacion-comandos {
+    background-color: black;
+    color: green;
+    padding: 20px;
+    overflow: hidden;
+    white-space: pre-wrap;
+    font-size: 24px;
+    line-height: 1.5;
+    height: 30px;
+    border: 2px solid green;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    text-align: center;
+    top: 70%;
+    transform: translateY(-50);
+}
+.comandos{
+    text-size-adjust: 150%;
+}
