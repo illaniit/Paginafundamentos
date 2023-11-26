@@ -96,7 +96,7 @@ img{
   
   /* Aplicar la animación al elemento de texto */
   .texto-animado {
-    animation: animacionTexto 2s infinite; /* Nombre de la animación, duración, e infinito para repetir */
+    animation: animacionTexto 2s infinite; /* Nombre de la animación, duración, e infinito para repetir jknkorfnilpke */
   }
   #simulacion-comandos {
     background-color: black;
@@ -116,3 +116,4 @@ img{
 .comandos{
     text-size-adjust: 150%;
 }
+
